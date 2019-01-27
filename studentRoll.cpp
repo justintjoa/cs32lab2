@@ -68,7 +68,7 @@ StudentRoll::~StudentRoll() {
   Node* n;
   while (p != NULL) {
 	//(*(p->s)).~Student();
-	//delete p->s;
+	delete p->s;
 	n = p->next;
 	delete p;
 	p = n;
